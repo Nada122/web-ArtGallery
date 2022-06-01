@@ -109,8 +109,17 @@
     <Content Include="LogInContent.aspx" />
     <Content Include="Cart.aspx" />
     <Content Include="ProductDetails.aspx" />
+    <Content Include="UploadProduct.aspx" />
+    <Content Include="AccountsList.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
     <Compile Include="GradualArtMurals.aspx.cs">
       <DependentUpon>GradualArtMurals.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -182,9 +191,24 @@
     <Compile Include="ProductDetails.aspx.designer.cs">
       <DependentUpon>ProductDetails.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UploadProduct.aspx.cs">
+      <DependentUpon>UploadProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UploadProduct.aspx.designer.cs">
+      <DependentUpon>UploadProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AccountsList.aspx.cs">
+      <DependentUpon>AccountsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccountsList.aspx.designer.cs">
+      <DependentUpon>AccountsList.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="UserMaster1.Master" />
+    <Content Include="AdminMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
