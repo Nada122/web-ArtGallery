@@ -107,6 +107,8 @@
     <Content Include="Login.aspx" />
     <Content Include="GradualArt1.aspx" />
     <Content Include="LogInContent.aspx" />
+    <Content Include="Cart.aspx" />
+    <Content Include="ProductDetails.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GradualArtMurals.aspx.cs">
@@ -145,13 +147,6 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="User.Master.cs">
-      <DependentUpon>User.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="User.Master.designer.cs">
-      <DependentUpon>User.Master</DependentUpon>
-    </Compile>
     <Compile Include="GradualArt1.aspx.cs">
       <DependentUpon>GradualArt1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -173,9 +168,22 @@
     <Compile Include="LogInContent.aspx.designer.cs">
       <DependentUpon>LogInContent.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDetails.aspx.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductDetails.aspx.designer.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="User.Master" />
     <Content Include="UserMaster1.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

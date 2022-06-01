@@ -33,9 +33,9 @@
             <tr>
                 <td class="auto-style26">
                     <img alt="" class="auto-style17" longdesc="http://localhost:51006/Images/tgrede7.jpg" src="Images/tgrede7.jpg" /><br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 300EGP<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="Button1" runat="server" Text="Add to cart" />
+                    &nbsp;&nbsp;&nbsp;300EGP&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;<asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" PostBackUrl='<%# "ProductDetails.aspx?Pid="+Eval("Pid") %>'>Add to cart</asp:LinkButton>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
                     <br />
                     <br />
                 </td>
@@ -44,7 +44,7 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     200EGP<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="Button2" runat="server" Text="Add to cart" />
+                    <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton1_Click">Add to cart</asp:LinkButton>
                     <br />
                     <br />
                 </td>
