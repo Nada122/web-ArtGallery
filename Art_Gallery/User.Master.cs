@@ -15,7 +15,7 @@ namespace Art_Gallery
 
             if (Request.Cookies["userinfo"] != null)
                 username = Request.Cookies["userinfo"].Values["usern"];
-            imguser.ImageUrl = "~/Images/" + username + ".jpg";
+            //imguser.ImageUrl = "~/Images/" + username + ".jpg";
         }
     }
 }

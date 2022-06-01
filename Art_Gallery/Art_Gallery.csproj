@@ -71,11 +71,9 @@
     <Content Include="App_Data\ArtGallery_log.ldf">
       <DependentUpon>ArtGallery.mdf</DependentUpon>
     </Content>
-    <Content Include="cart.aspx" />
     <Content Include="GradualArtMurals.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="HtmlPage1.html" />
-    <Content Include="Images\background.jpg" />
     <Content Include="Images\elfntgrede.jpg" />
     <Content Include="Images\fntgerde4.jpg" />
     <Content Include="Images\fntgrede.jpg" />
@@ -99,22 +97,18 @@
     <Content Include="Images\tgrede8.jpg" />
     <Content Include="Images\tgrede999.jpg" />
     <Content Include="Images\fn3.jpeg" />
+    <Content Include="Images\webart.jpg" />
     <Content Include="index.html" />
     <Content Include="Islamic.aspx" />
     <Content Include="Nature.aspx" />
-    <Content Include="SignUp.aspx" />
+    <Content Include="SignUp1.aspx" />
     <Content Include="StyleSheet1.css" />
     <Content Include="Web.config" />
     <Content Include="Login.aspx" />
+    <Content Include="GradualArt1.aspx" />
+    <Content Include="LogInContent.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cart.aspx.cs">
-      <DependentUpon>cart.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="cart.aspx.designer.cs">
-      <DependentUpon>cart.aspx</DependentUpon>
-    </Compile>
     <Compile Include="GradualArtMurals.aspx.cs">
       <DependentUpon>GradualArtMurals.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -144,13 +138,6 @@
       <DependentUpon>Nature.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SignUp.aspx.cs">
-      <DependentUpon>SignUp.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SignUp.aspx.designer.cs">
-      <DependentUpon>SignUp.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -165,10 +152,31 @@
     <Compile Include="User.Master.designer.cs">
       <DependentUpon>User.Master</DependentUpon>
     </Compile>
+    <Compile Include="GradualArt1.aspx.cs">
+      <DependentUpon>GradualArt1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GradualArt1.aspx.designer.cs">
+      <DependentUpon>GradualArt1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserMaster1.Master.cs">
+      <DependentUpon>UserMaster1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserMaster1.Master.designer.cs">
+      <DependentUpon>UserMaster1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="LogInContent.aspx.cs">
+      <DependentUpon>LogInContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogInContent.aspx.designer.cs">
+      <DependentUpon>LogInContent.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
     <Content Include="User.Master" />
+    <Content Include="UserMaster1.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
