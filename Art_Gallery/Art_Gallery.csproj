@@ -67,10 +67,82 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\ArtGallery.mdf" />
+    <Content Include="App_Data\ArtGallery_log.ldf">
+      <DependentUpon>ArtGallery.mdf</DependentUpon>
+    </Content>
+    <Content Include="cart.aspx" />
+    <Content Include="GradualArtMurals.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="Images\background.jpg" />
+    <Content Include="Images\elfntgrede.jpg" />
+    <Content Include="Images\fntgerde4.jpg" />
+    <Content Include="Images\fntgrede.jpg" />
+    <Content Include="Images\fntgrede3%29.jpeg" />
+    <Content Include="Images\fntgrede33.jpg" />
+    <Content Include="Images\fntgrede5x.jpg" />
+    <Content Include="Images\gradialtripple.PNG" />
+    <Content Include="Images\mint.jpg" />
+    <Content Include="Images\natue9.jpg" />
+    <Content Include="Images\nature2.jpg" />
+    <Content Include="Images\nature3.jpg" />
+    <Content Include="Images\nature4.jpg" />
+    <Content Include="Images\nature5.jpg" />
+    <Content Include="Images\nature6.jpg" />
+    <Content Include="Images\nature7.jpg" />
+    <Content Include="Images\nature8.jpg" />
+    <Content Include="Images\sea.jpg" />
+    <Content Include="Images\seaM.jpeg" />
+    <Content Include="Images\tgrede6r.jpg" />
+    <Content Include="Images\tgrede7.jpg" />
+    <Content Include="Images\tgrede8.jpg" />
+    <Content Include="Images\tgrede999.jpg" />
+    <Content Include="Images\fn3.jpeg" />
+    <Content Include="index.html" />
+    <Content Include="Islamic.aspx" />
+    <Content Include="Nature.aspx" />
     <Content Include="SignUp.aspx" />
+    <Content Include="StyleSheet1.css" />
     <Content Include="Web.config" />
+    <Content Include="Login.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cart.aspx.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cart.aspx.designer.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GradualArtMurals.aspx.cs">
+      <DependentUpon>GradualArtMurals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GradualArtMurals.aspx.designer.cs">
+      <DependentUpon>GradualArtMurals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Islamic.aspx.cs">
+      <DependentUpon>Islamic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Islamic.aspx.designer.cs">
+      <DependentUpon>Islamic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Nature.aspx.cs">
+      <DependentUpon>Nature.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Nature.aspx.designer.cs">
+      <DependentUpon>Nature.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignUp.aspx.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
@@ -79,15 +151,33 @@
     <Compile Include="SignUp.aspx.designer.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User.Master.cs">
+      <DependentUpon>User.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User.Master.designer.cs">
+      <DependentUpon>User.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="User.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UserPic\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

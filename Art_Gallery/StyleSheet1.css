@@ -1,0 +1,205 @@
+﻿body {
+
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+
+}
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(mint.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbarr {
+    /*width: 85px;*/
+    margin: auto;
+    float: right;
+    padding:0px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+    
+    
+}
+
+.navbarr ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative; /*relative to (ul li:after) to make underline below home artwork....*/
+}
+
+.navbarr ul li a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+.navbarr ul li::after {
+        content: '';
+        height: 3px;
+        width: 0%; /*To hide the line*/
+        background: #e88ec1;
+        position: absolute;
+        left: 0;
+        bottom: -10px; /*to make the line a little down*/
+        transition: 0.5s; /*the speed of the line movement*/
+    }
+
+.navbarr ul li:hover::after {
+        width: 100%; /*make the line move from left to right when the mouth moves on it*/
+    }
+/*make home artwork ... input one line*/
+.navbar {
+    width: 85%;
+    /*float:right;*/
+    margin: auto;
+    padding: 0px 0;
+    display: flex;
+    align-items: center; /*put (home art work....in the center)*/
+    justify-content: flex-end;
+}
+
+.webart {
+    width: 100px;
+    cursor: pointer;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative; /*relative to (ul li:after) to make underline below home artwork....*/
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff; /*words color*/
+  text-transform:uppercase;
+
+}
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%; /*To hide the line*/
+    background: #e88ec1;/*line color*/
+    position:absolute;
+    left:0;
+    bottom:-10px; /*to make the line a little down*/
+    transition:0.5s; /*the speed of the line movement*/
+}
+.navbar ul li:hover::after{
+    width:100%; /*make the line move from left to right when the mouth moves on it*/
+
+
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*picture*/ below home*/
+* {
+    box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+   
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color:rgba(29, 181, 184, 0.34);
+    padding: 2px 16px;
+    color: black;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
